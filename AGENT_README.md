@@ -12,3 +12,6 @@ The architecture of an SNMP (Simple Network Management Protocol) agent is a modu
 5. **Session layer:** The session layer provides a high-level interface for communicating with the SNMP manager. The session layer provides the necessary context information for processing SNMP requests and sending responses.
 
 ![agent architecture](Agent-architecture.png)
+
+# SNMP AGENT STARTUP ROUTINE
+![ageent_flow_chart](Basic_Agent_workflow.svg)
