@@ -10,3 +10,5 @@ The architecture of an SNMP (Simple Network Management Protocol) agent is a modu
 4. **Transport layer:** The transport layer is responsible for transmitting SNMP requests and responses between the SNMP manager and the SNMP agent. The transport layer provides a reliable and secure communication mechanism for SNMP traffic.
 
 5. **Session layer:** The session layer provides a high-level interface for communicating with the SNMP manager. The session layer provides the necessary context information for processing SNMP requests and sending responses.
+
+![agent architecture](Agent-architecture.png)
