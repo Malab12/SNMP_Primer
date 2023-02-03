@@ -40,3 +40,28 @@ The init_snmp function performs several important tasks, including:
 4. **Initializing the agent:** The init_snmp function calls the init_agent function, which initializes the agent helpers and prepares the agent to process SNMP requests and manage MIB information.
 
 5. **Starting the agent:** The init_snmp function starts the SNMP agent, which begins listening for and processing SNMP requests.
+
+## The init_agent function
+The init_agent function in net-SNMP agents is used to initialize the SNMP agent and set up its basic configurations.
+
+1. **Parsing command line options:** The init_agent function uses the getopt library to parse the command line options passed to the agent and sets the corresponding configuration variables based on these options.
+
+2. **Initializing MIB modules:** The init_agent function loads the necessary MIB modules by calling the init_mib function, which reads the MIB definitions and sets up the data structures used to manage the MIB information.
+
+3. **Setting up the agent's trap receiver:** The function sets up the trap receiver by calling the init_traps function, which sets up the socket and handler for incoming trap messages.
+
+4. **Initializing the AgentX subagent protocol:** If the agent is running as a subagent, the init_agent function initializes the AgentX subagent protocol by calling the init_master function, which sets up the communication channel between the master agent and the subagent.
+
+5. **Registering OID handlers:** Finally, the function registers the OID handlers, which are responsible for handling incoming SNMP requests for specific OIDs. The OID handlers are registered using the register_mib function from the SNMP library.
+
+### The init_mib function
+The init_mib function does the following:
+
+1. **Reading the MIB modules:** The function reads the MIB modules specified on the command line or in the configuration file and loads the definitions of the MIB objects into memory.
+
+2. **Initializing the MIB tree:** The init_mib function sets up the MIB tree, which is a hierarchical structure used to store the MIB information. Each node in the MIB tree represents an object in the MIB and is identified by a unique Object Identifier (OID).
+
+3. **Registering MIB modules:** The function registers the MIB modules by calling the register_mib function, which adds the MIB definitions to the MIB tree. The function maps each MIB object to a specific OID in the MIB tree, and also sets up the handlers that are responsible for processing incoming SNMP requests for specific MIB objects.
+
+4. **Initializing the cache:** The init_mib function also initializes the cache, which is a data structure used to store the values of frequently-accessed MIB objects. This helps to improve the performance of the SNMP agent by reducing the time required to retrieve MIB values.
+
