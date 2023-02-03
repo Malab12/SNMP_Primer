@@ -15,3 +15,10 @@ The architecture of an SNMP (Simple Network Management Protocol) agent is a modu
 
 # SNMP AGENT STARTUP ROUTINE
 ![ageent_flow_chart](Basic_Agent_workflow.svg)
+
+## Reading Command line arguments
+A net-SNMP agent reads command line options using the getopt library, which provides a convenient way for parsing the options passed to a program on the command line.
+
+The net-SNMP agent supports various options that allow the user to control various aspects of its behavior, such as setting the location of the configuration file, specifying which MIB modules to load, and more.
+
+To read command line options, the net-SNMP agent parses the arguments passed to it using getopt, and then performs the appropriate actions based on the options specified.
