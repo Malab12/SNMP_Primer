@@ -65,3 +65,23 @@ The init_mib function does the following:
 
 4. **Initializing the cache:** The init_mib function also initializes the cache, which is a data structure used to store the values of frequently-accessed MIB objects. This helps to improve the performance of the SNMP agent by reducing the time required to retrieve MIB values.
 
+### The netsnmp_register_token_pair function
+This function is part of the net-SNMP API and is used to register custom tokens and their associated callbacks.
+
+A token is a string that represents a specific configuration option in the configuration file. The net-SNMP agent can use custom tokens to define its own configuration options and their values. The associated callback function is then called when the token is encountered in the configuration file.
+
+To register a custom token and its associated callback, the net-SNMP agent calls the netsnmp_register_token_pair function and passes the following arguments:
+
+1. The token string
+2. The callback function
+3. An optional context pointer that is passed to the callback function
+
+### The agent helpers
+The agent helpers are part of the SNMP agent infrastructure and provide a convenient way to add new MIB modules and implement SNMP operations, such as GET and SET requests.
+
+By registering a default MIB domain, the init_agent function creates an environment in which the agent helpers can operate and manage the MIB modules.
+
+Once the default MIB domain has been registered, the init_agent function can then call the init_* functions for each of the MIB modules that the agent supports. These functions are responsible for initializing the MIB modules and registering them with the default MIB domain.
+
+
+
