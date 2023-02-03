@@ -1,1 +1,133 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T04:49:06.517Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.16" etag="DFSpCA4Xt6nRjYXOcb-q" type="github"><diagram name="Page-1" id="RfREyaDkvaD1dqoQSXP5">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-03T06:05:18.733Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="-WnIx8i7m6HXzEDQgmG1" version="20.8.16" type="github">
+  <diagram name="Page-1" id="RfREyaDkvaD1dqoQSXP5">
+    <mxGraphModel dx="1434" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-17" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="NFFSjkjkPyMbZ37k-mxD-11" target="NFFSjkjkPyMbZ37k-mxD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-11" value="getopt library" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="235" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-1" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Agent Architecture&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" width="380" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-4" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-2" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=36;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-4">
+          <mxGeometry width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Start&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-4">
+          <mxGeometry x="30" y="22" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-9" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-10">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Read command line arguments&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-10">
+          <mxGeometry x="10" y="15" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=9;" edge="1" parent="1" source="NFFSjkjkPyMbZ37k-mxD-13" target="NFFSjkjkPyMbZ37k-mxD-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-13" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-14" value="Decide if its a subagent or master agent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="325" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-33" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NFFSjkjkPyMbZ37k-mxD-2" target="NFFSjkjkPyMbZ37k-mxD-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="550" as="sourcePoint" />
+            <mxPoint x="360" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="NFFSjkjkPyMbZ37k-mxD-9" target="NFFSjkjkPyMbZ37k-mxD-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-37" value="init_snmp" style="swimlane;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="400" width="222" height="440" as="geometry">
+            <mxRectangle x="10" y="400" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-15" value="Run the init_agent function" style="swimlane;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-37">
+          <mxGeometry x="11" y="30" width="211" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-19" value="&lt;b&gt;Run the init_mib function&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-15">
+          <mxGeometry x="10" y="34" width="180" height="150" as="geometry">
+            <mxRectangle x="10" y="34" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-20" value="read mib modules and load definitions into memory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-19">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-21" value="set up the mib tree" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-19">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-22" value="run &lt;b&gt;register_mib &lt;/b&gt;function" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-19">
+          <mxGeometry y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-23" value="Initialise the cache" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-19">
+          <mxGeometry y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-24" value="&lt;b&gt;Run net_snmp_register_token_pair&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-15">
+          <mxGeometry x="11" y="196" width="178" height="60" as="geometry">
+            <mxRectangle x="11" y="196" width="200" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-25" value="registers its own configuration file tokens and callbacks" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-24">
+          <mxGeometry y="30" width="178" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-28" value="&lt;b&gt;initialise&amp;nbsp;the agent helpers&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-15">
+          <mxGeometry x="10" y="268" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-29" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;run netsnmp_register_default_domain&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-28">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-30" value="run init_* for each module supported" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-28">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-31" value="this prepares the agent to receive requests on the MIB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-28">
+          <mxGeometry y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-39" value="snmp_sess_open()" style="swimlane;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="865" width="220" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-40" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-39">
+          <mxGeometry x="10" y="34" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-41" value="Creates a session and opens ports for requests" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-39">
+          <mxGeometry x="40" y="49" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-42" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-39">
+          <mxGeometry x="11" y="105" width="199" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-43" value="Read incoming requests and process them using &lt;b&gt;snmp_read&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-39">
+          <mxGeometry x="40" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-47" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="1073" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-45" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-47">
+          <mxGeometry width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-46" value="fork the agent unless specified in the command line arguments" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-47">
+          <mxGeometry x="30" y="14" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-50" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="1152" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-48" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-50">
+          <mxGeometry width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NFFSjkjkPyMbZ37k-mxD-49" value="Save persistent data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="NFFSjkjkPyMbZ37k-mxD-50">
+          <mxGeometry x="30" y="15" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
