@@ -100,8 +100,7 @@ You have created a MIB but that does not mean that the agent can access it or ha
 4. Once you have written the necessary files, refer to http://www.net-snmp.org/tutorial/tutorial-5/toolkit/mib_module/index.html to figure out how to integrate our newely created mibs with the agent
 
 # Looking Ahead
-1. Implement more complex data structures into our MIB such as tables
-2. Plan out the mib structure for our actual product
-3. Research more into subagents and dynamic object loading
+Creating our own version of of the agent
+Basic agent architecture and flow of the agent startup are here: [agent_creation_documentation](AGENT_README.md)
    
 
