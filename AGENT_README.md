@@ -31,12 +31,12 @@ To decide if it is a master agent or a subagent, the net-SNMP agent checks for t
 ## The init_snmp function
 The init_snmp function performs several important tasks, including:
 
-1. Initializing the SNMP library: The init_snmp function calls the init_snmp function from the libnetsnmp library, which initializes the SNMP library and prepares it for use by the agent.
+1. **Initializing the SNMP library:** The init_snmp function calls the init_snmp function from the libnetsnmp library, which initializes the SNMP library and prepares it for use by the agent.
 
-2. Parsing command-line options: The init_snmp function parses the command-line options passed to the agent and sets the appropriate configuration values.
+2. **Parsing command-line options:** The init_snmp function parses the command-line options passed to the agent and sets the appropriate configuration values.
 
-3. Registering MIB modules: The init_snmp function registers the MIB modules that the agent supports, allowing the SNMP library to access the MIB information and implement SNMP operations.
+3. **Registering MIB modules:** The init_snmp function registers the MIB modules that the agent supports, allowing the SNMP library to access the MIB information and implement SNMP operations.
 
-4. Initializing the agent: The init_snmp function calls the init_agent function, which initializes the agent helpers and prepares the agent to process SNMP requests and manage MIB information.
+4. **Initializing the agent:** The init_snmp function calls the init_agent function, which initializes the agent helpers and prepares the agent to process SNMP requests and manage MIB information.
 
-5. Starting the agent: The init_snmp function starts the SNMP agent, which begins listening for and processing SNMP requests.
+5. **Starting the agent:** The init_snmp function starts the SNMP agent, which begins listening for and processing SNMP requests.
