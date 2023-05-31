@@ -22,7 +22,7 @@
 2. Inherits [CommanderBase](#commander) publicly
 
 ### Public methods
-1. [Constructor](snmpagent-constructor)
+1. [Constructor](#snmpagent-constructor-)
 2. [start]()
 3. [stop]()
 4. [publishChangedParam]()
