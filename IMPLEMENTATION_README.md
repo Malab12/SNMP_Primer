@@ -54,6 +54,19 @@ calls the stop methods of the [CommanderBase](#commander) and the [SNMPAgent](#s
 
 ### publishChangedParams
 #### Arguments:
+1. **devicePath:** The specific device the parameter belongs to (NODE_MANAGER, IOPARAMS, etc)
+2. **param:** the specific parameter we want to get data from
+#### Returns:
+**response:** An any structure containing the information requested
+#### Description:
+uses the \_runCommand method inherited from [CommanderBase](#commander) to get the value of the parameter as specified by the arguments, returns the response for the command
 
-
+### handleRequest
+#### Arguments: 
+1. **requestHandler:** the devicepath and the type of request to be executed (NODE_MANAGER, get/set)
+2. **request:** the specific parameter and the specific index( optional ) on which the request handler will act
+3. **response:** the object to be populated by the execution of the request (This is a return parameter)
+#### Returns:
+Boolean: identifies if the request executed successfully or not
+**
 ### SnmpAgent
