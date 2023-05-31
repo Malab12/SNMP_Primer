@@ -25,7 +25,7 @@
 1. [Constructor](#snmpcommander-constructor-)
 2. [start](#start)
 3. [stop](#stop)
-4. [publishChangedParam](#publishchangedparam)
+4. [publishChangedParam](#publishchangedparams)
 5. [handleRequest](#handlerequest)
 
 ### SNMPCommander[ Constructor ]
