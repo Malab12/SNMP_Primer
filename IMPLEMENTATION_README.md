@@ -1,8 +1,8 @@
 # Implementation
 
 ## Classes of intereset
-1. [SnmpCommander]
-2. [SnmpAgent]
+1. [SnmpCommander](#snmpcommander)
+2. [SnmpAgent](#snmpagent)
 
 ### SnmpCommander
 
