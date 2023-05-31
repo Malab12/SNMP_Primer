@@ -22,9 +22,9 @@
 2. Inherits [CommanderBase](#commander) publicly
 
 #### Parameters
-1. Private 
+1. Private \n 
 |__ Nill
-2. Public
+2. Public \n
 |__ Nill
 
 
