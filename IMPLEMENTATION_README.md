@@ -23,10 +23,10 @@
 
 ### Public methods
 1. [Constructor](#snmpcommander-constructor-)
-2. [start]()
-3. [stop]()
-4. [publishChangedParam]()
-5. [handleRequest]()
+2. [start](#start)
+3. [stop](#stop)
+4. [publishChangedParam](#publishchangedparam)
+5. [handleRequest](#handlerequest)
 
 ### SNMPCommander[ Constructor ]
 #### Arguments:
