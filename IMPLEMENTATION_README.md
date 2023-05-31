@@ -115,105 +115,179 @@ uses the \_runCommand method inherited from [CommanderBase](#commander) to get t
 
 ### convertLscStringTypeToMIBType
 #### Arguments:
-#### Returns:
+**lscParameter:** structure containing relevant information for the parameter 
+#### Returns: 
+**String:** equivalent string reperesentation of the datatype for the MIB files
 #### Description:
+takes in a LSC parameter and based on the datatype represents an equivalent string representation which is usable in a MIB file
 
 ### convertLscStringTypetoSNMPType
 #### Arguments:
+**type:** string reperesenting the datatype of the lsc parameter
 #### Returns:
+**uchar:** enum value associated with a particular snmp datatype
 #### Description:
+Takes in a string representation of the LSC parameter datatype and returns back a u_char value associated with the equivalent snmp datatype
 
 ### populateLookupFromYaml
 #### Arguments:
+1. **parameterList:** YAML node containing a list of parameters
+2. **deviceID:** the parent deviceID under which this list of parameters will be registered
+3. **groupName:** the particular mib group these parameters belong to
 #### Returns:
+void
 #### Description:
+1. Populates the lookupTable with the list of parameters provided.
+2. Iterate through the parameters and get the individual fields
+3. The ID of each parameter is calculated as: 100 * deviceID + parameterID
+4. add new snmpParameter using the fields with the key as the ID in the lookupTable
 
 ### headerGenerate
 #### Arguments:
+1. **name:** name of the MIB module
+2. **fileName:** name of the MIB file
+3. **productName:** the product branch under which this MIB will be registered
+4. **ID:** ID of the MIB module under the product
+5. **writer:** ostream writer utilized to write into the file
 #### Returns:
+void
 #### Description:
+Generates the *almost* static header of each MIB file
 
 ### writeScalarParameter
 #### Arguments:
+1. **parameter:** specific snmpParameter being written into
+2. **writer:** ostream writer utilized to write into the file
 #### Returns:
+void
 #### Description:
+Writes the scalar parameter into the MIB file in the proper format
 
 ### writeVectorParameter
 #### Arguments:
+1. **parameter:** specific snmpParameter being written into
+2. **writer:** ostream writer utilized to write into the file
 #### Returns:
+void
 #### Description:
+Writes the vector parameter into the MIB file in the proper format
 
 ### SNMPAgent[ Constructor ]
-#### Arguments:
+#### Arguments: 
+1. **name:** SNMPD the name for the application and library
+2. **config:** YAML node containing the configuration information for 
 #### Returns:
 #### Description:
+Constructor for the SNMPAgent class. Configures information essential for the agent to run properly (community, port and user information)
 
 ### start
 #### Arguments:
+void
 #### Returns:
+void
 #### Description:
+1. reads the parameter YAML files and populates the lookupTable
+2. if required, generates the MIB files 
+3. initialises the agent and starts it run procedure
 
 ### stop
 #### Arguments:
+void
 #### Returns:
+void
 #### Description:
+1. starts the joining procedure of the the SNMP thread with the main LSC thread
+2. Does the necessary snmp cleanup and shutdown procedures
 
 ### reciever
 #### Arguments:
+void
 #### Returns:
+void
 #### Description:
+1. waits for intialization to complete
+2. runs the agent on a seperate thread
+3. listens for snmp requests 
 
 ### registerParameters
 #### Arguments:
+void
 #### Returns:
+void
 #### Description:
+1. iterates through the parameters in the lookup table
+2. based on the type of parameter, registers it as either a scalar or vector
 
 ### registerTable
 #### Arguments:
+snmpParameter: The parameter to be registered
 #### Returns:
+void
 #### Description:
+1. creates a table_data_set
+2. populates with default values
+3. registers the table with the table handler
 
 ### scalarToScalarGetHandler
 #### Arguments:
+1. **requests:** struct containing information from the SNMP request
+2. **parameter:** pointer to the parameter being queried to
+3. **response:** populated by LSC
 #### Returns:
+void
 #### Description:
+1. Specific LSC->SNMP middle handler which handles get requests for parameters which are scalar to SNMP as well as LSC
+2. Based on the datatype of the parameter, we populate the requests with the value extracted from the LSC
 
 ### vectorToScalarGetHandler
 #### Arguments:
+1. requests: netsnmp_request_info struct containing essentail information from the SNMP request
+2. parameter: pointer to the specific snmpParameter struct being queried to
+3. index: integer id identifying which value in the vector param specifically is being queried
+4. responseArray: response populated by LSC
 #### Returns:
+void 
 #### Description:
+1. specific LSC->SNMP middle handler which handles get requests for parameters scalar to SNMP but vector to LSC
+2. Based on the datatype of the parameter and the index, we populate the requests with the value extracted from the LSC
 
 ### scalarToScalarSetHandler
 #### Arguments:
 #### Returns:
 #### Description:
-
+you get the gist same vibe really
 ### vectorToScalarSetHandler
 #### Arguments:
 #### Returns:
 #### Description:
+you get the gist same vibe really
 
-### tableHandler
+### tableHandler (STATIC METHOD)
 #### Arguments:
 #### Returns:
 #### Description:
+generic table parameter handler
 
-### scalarHandler
+### scalarHandler (STATIC METHOD)
 #### Arguments:
 #### Returns:
 #### Description:
+generic scalar parameter handler
 
 ### ipv4AddressHandler
 #### Arguments:
 #### Returns:
 #### Description:
+specific handler for ipv4Address because this baby is a special little snowflake (integer in LSC but string on SNMP)
 
-### handleRequest
+### handleRequest (VIRTUAL FUNCTION)
 #### Arguments:
 #### Returns:
 #### Description:
+
 
 ### generateMIBFiles
 #### Arguments:
 #### Returns:
 #### Description:
+amalgamate method which generates all the MIB files
