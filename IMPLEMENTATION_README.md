@@ -30,10 +30,30 @@
 
 ### SNMPCommander[ Constructor ]
 #### Arguments:
-1. String name
-2. YAML::Node config
-3. ControllerDevicePtr controllerDevice
-#### Return
-Nill
+1. **name:** name of the process 
+2. **config:** YAML Node structure containing the config info for the snmp agent
+3. **controllerDevice:** pointer to a specific controllerDevice object, in our case **LinuxSystemController**
+#### Description:
+Constructor for the SNMPCommander Class. Provides the arguments before calling the constructors for the [CommanderBase](#commander) and the [SNMPAgent](#snmpagent) classes
+
+### Start
+#### Arguments:
+None
+#### Returns:
+None
+#### Description:
+calls the start methods of the [CommanderBase](#commander) and the [SNMPAgent](#snmpagent) classes
+
+### Stop
+#### Arguments:
+None
+#### Returns:
+None
+#### Description:
+calls the stop methods of the [CommanderBase](#commander) and the [SNMPAgent](#snmpagent) classes
+
+### publishChangedParams
+#### Arguments:
+
 
 ### SnmpAgent
