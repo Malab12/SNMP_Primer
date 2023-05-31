@@ -89,35 +89,131 @@ uses the \_runCommand method inherited from [CommanderBase](#commander) to get t
 1. **lookupTable:** A map of SNMP parameter structs containing all parameters the agent has access to and the relavent fields associated with them required for making requests on the parameter on the LSC side
 
 ### Private methods
-1. convertLscStringTypeToMIBType
-2. convertLscStringTypetoSNMPType
-3. populateLookupFromYaml
-4. headerGenerate
-5. writeScalarParameter
-6. writeVectorParameter
+1. [convertLscStringTypeToMIBType](#convertlscstringtypetomibtype)
+2. [convertLscStringTypetoSNMPType](#convertlscstringtypetosnmptype)
+3. [populateLookupFromYaml](#populatelookupfromyaml)
+4. [headerGenerate](#headergenerate)
+5. [writeScalarParameter](#writescalarparameter)
+6. [writeVectorParameter](#writevectorparameter)
 
 ### Public methods
-1. Constructor
-2. start
-3. stop
-4. reciever
-5. registerParameters
-6. registerTable
-7. scalarToScalarGetHandler
-8. vectorToScalarGetHandler
-9. scalarToScalarSetHandler
-10. vectorToScalarSetHandler
-11. tableHandler
-12. scalarHandler
-13. ipv4AddressHandler
-14. handleRequest
-15. generateMIBFiles
+1. [Constructor](#snmpagent-constructor-)
+2. [start]()
+3. [stop]()
+4. [reciever]()
+5. [registerParameters]()
+6. [registerTable]()
+7. [scalarToScalarGetHandler]()
+8. [vectorToScalarGetHandler]()
+9. [scalarToScalarSetHandler]()
+10. [vectorToScalarSetHandler]()
+11. [tableHandler]()
+12. [scalarHandler]()
+13. [ipv4AddressHandler]()
+14. [handleRequest]()
+15. [generateMIBFiles]()
+
+### convertLscStringTypeToMIBType
+#### Arguments:
+#### Returns:
+#### Description:
+
+### convertLscStringTypetoSNMPType
+#### Arguments:
+#### Returns:
+#### Description:
+
+### populateLookupFromYaml
+#### Arguments:
+#### Returns:
+#### Description:
+
+### headerGenerate
+#### Arguments:
+#### Returns:
+#### Description:
+
+### writeScalarParameter
+#### Arguments:
+#### Returns:
+#### Description:
+
+### writeVectorParameter
+#### Arguments:
+#### Returns:
+#### Description:
 
 ### SNMPAgent[ Constructor ]
 #### Arguments:
 #### Returns:
 #### Description:
 
+### start
+#### Arguments:
+#### Returns:
+#### Description:
 
+### stop
+#### Arguments:
+#### Returns:
+#### Description:
 
-### Public methods
+### reciever
+#### Arguments:
+#### Returns:
+#### Description:
+
+### registerParameters
+#### Arguments:
+#### Returns:
+#### Description:
+
+### registerTable
+#### Arguments:
+#### Returns:
+#### Description:
+
+### scalarToScalarGetHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### vectorToScalarGetHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### scalarToScalarSetHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### vectorToScalarSetHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### tableHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### scalarHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### ipv4AddressHandler
+#### Arguments:
+#### Returns:
+#### Description:
+
+### handleRequest
+#### Arguments:
+#### Returns:
+#### Description:
+
+### generateMIBFiles
+#### Arguments:
+#### Returns:
+#### Description:
