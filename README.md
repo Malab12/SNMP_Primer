@@ -1,3 +1,8 @@
+# What do you want?
+1. **NetSnmp installation on local systems:** Continue on this page
+2. **Creating your agent:** [agent_creation_documentation](AGENT_README.md)
+3. **Implementation docs:** [Implementation](IMPLEMENTATION_README.md)
+
 # NET_SNMP setup and install instructions
 Net-Snmp is an opensource suite of softwares and APIs which allow developers to work with and on the SNMP protocol. 
 
