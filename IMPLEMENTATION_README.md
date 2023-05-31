@@ -22,7 +22,7 @@
 2. Inherits [CommanderBase](#commander) publicly
 
 ### Public methods
-1. [Constructor]()
+1. [Constructor](snmpagent-constructor)
 2. [start]()
 3. [stop]()
 4. [publishChangedParam]()
@@ -67,8 +67,8 @@ uses the \_runCommand method inherited from [CommanderBase](#commander) to get t
 2. **request:** the specific parameter and the specific index( optional ) on which the request handler will act
 3. **response:** the object to be populated by the execution of the request (This is a return parameter)
 #### Returns:
-Boolean: identifies if the request executed successfully or not
-**
+**Boolean:** identifies if the request executed successfully or not
+
 --------
 ### SnmpAgent
 
