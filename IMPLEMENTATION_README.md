@@ -22,11 +22,11 @@
 2. Inherits [CommanderBase](#commander) publicly
 
 ### Public methods
-1. [Constructor]
-2. [start]
-3. [stop]
-4. [publishChangedParam]
-5. [handleRequest]
+1. [Constructor]()
+2. [start]()
+3. [stop]()
+4. [publishChangedParam]()
+5. [handleRequest]()
 
 ### SNMPCommander[ Constructor ]
 #### Arguments:
@@ -88,4 +88,36 @@ Boolean: identifies if the request executed successfully or not
 ### Public variables
 1. **lookupTable:** A map of SNMP parameter structs containing all parameters the agent has access to and the relavent fields associated with them required for making requests on the parameter on the LSC side
 
+### Private methods
+1. convertLscStringTypeToMIBType
+2. convertLscStringTypetoSNMPType
+3. populateLookupFromYaml
+4. headerGenerate
+5. writeScalarParameter
+6. writeVectorParameter
 
+### Public methods
+1. Constructor
+2. start
+3. stop
+4. reciever
+5. registerParameters
+6. registerTable
+7. scalarToScalarGetHandler
+8. vectorToScalarGetHandler
+9. scalarToScalarSetHandler
+10. vectorToScalarSetHandler
+11. tableHandler
+12. scalarHandler
+13. ipv4AddressHandler
+14. handleRequest
+15. generateMIBFiles
+
+### SNMPAgent[ Constructor ]
+#### Arguments:
+#### Returns:
+#### Description:
+
+
+
+### Public methods
