@@ -14,18 +14,26 @@
 2. [parameterList.yaml]()
 3. individual [groupParameter]() files (basebandParameters.yaml, networkParameters.yaml etc) 
 --------
-### SnmpCommander
+## SnmpCommander
 **Path:** system-controller/Linux/Commander/SnmpCommander.
 
-#### Associations
+### Associations
 1. Inherits [SnmpAgent](#snmpagent) publicly
 2. Inherits [CommanderBase](#commander) publicly
 
-#### Parameters
-1. Private \n 
-|__ Nill
-2. Public \n
-|__ Nill
+### Public methods
+1. [Constructor]
+2. [start]
+3. [stop]
+4. [publishChangedParam]
+5. [handleRequest]
 
+### SNMPCommander[ Constructor ]
+#### Arguments:
+1. String name
+2. YAML::Node config
+3. ControllerDevicePtr controllerDevice
+#### Return
+Nill
 
 ### SnmpAgent
