@@ -69,4 +69,23 @@ uses the \_runCommand method inherited from [CommanderBase](#commander) to get t
 #### Returns:
 Boolean: identifies if the request executed successfully or not
 **
+--------
 ### SnmpAgent
+
+### Associations
+1. **SnmpParameter:** A structure encapsulating all fields required by the agent to act upon the various parameters
+2. **MIBStruct:** A structure encapsulating all fields required by the agent to generate the various MIB files
+
+### Private variables
+1. **name:** name of the agent process and library intialization (KEEP IT AS snmpd)
+2. **node:** The YAML node containing the configuration information for the snmp agent
+3. **thread:** The thread on which the agent proces will run
+4. **isInitialized:** boolean status on the agent intialization process
+5. **isRunning:** boolean status on the agent run procedure
+6. **generateMIB:** boolean stating if MIB files need to be generated or not
+7. **fileStructures:** Vector of MIB structure pointers containing list of MIB files to be created and their associated fields
+
+### Public variables
+1. **lookupTable:** A map of SNMP parameter structs containing all parameters the agent has access to and the relavent fields associated with them required for making requests on the parameter on the LSC side
+
+
