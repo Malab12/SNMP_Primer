@@ -22,10 +22,10 @@
 2. Inherits [CommanderBase](#commander) publicly
 
 #### Parameters
-1. ##### Private
-Nill
-2. ##### Public
-Nill
+1. Private 
+|__ Nill
+2. Public
+|__ Nill
 
 
 ### SnmpAgent
